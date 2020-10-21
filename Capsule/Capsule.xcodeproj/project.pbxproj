@@ -99,13 +99,12 @@
 		3F273FB8253FDC13001BC3FE /* Capsule */ = {
 			isa = PBXGroup;
 			children = (
-				3F273FB9253FDC13001BC3FE /* AppDelegate.swift */,
-				3F273FBB253FDC13001BC3FE /* SceneDelegate.swift */,
+				3F273FED253FDC8F001BC3FE /* Resources */,
+				3F273FEC253FDC73001BC3FE /* SupportingFiles */,
+				3F273FEB253FDC6B001BC3FE /* ViewModels */,
+				3F273FEA253FDC66001BC3FE /* Models */,
+				3F273FE9253FDC5F001BC3FE /* Views */,
 				3F273FBD253FDC13001BC3FE /* ViewController.swift */,
-				3F273FBF253FDC13001BC3FE /* Main.storyboard */,
-				3F273FC2253FDC15001BC3FE /* Assets.xcassets */,
-				3F273FC4253FDC15001BC3FE /* LaunchScreen.storyboard */,
-				3F273FC7253FDC15001BC3FE /* Info.plist */,
 			);
 			path = Capsule;
 			sourceTree = "<group>";
@@ -126,6 +125,47 @@
 				3F273FDD253FDC15001BC3FE /* Info.plist */,
 			);
 			path = CapsuleUITests;
+			sourceTree = "<group>";
+		};
+		3F273FE9253FDC5F001BC3FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F273FEA253FDC66001BC3FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3F273FEB253FDC6B001BC3FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3F273FEC253FDC73001BC3FE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3F273FB9253FDC13001BC3FE /* AppDelegate.swift */,
+				3F273FBB253FDC13001BC3FE /* SceneDelegate.swift */,
+				3F273FBF253FDC13001BC3FE /* Main.storyboard */,
+				3F273FC4253FDC15001BC3FE /* LaunchScreen.storyboard */,
+				3F273FC7253FDC15001BC3FE /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3F273FED253FDC8F001BC3FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F273FC2253FDC15001BC3FE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F8AA547EL;
-				INFOPLIST_FILE = Capsule/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Capsule/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7F8AA547EL;
-				INFOPLIST_FILE = Capsule/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Capsule/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
