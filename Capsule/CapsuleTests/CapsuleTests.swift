@@ -11,24 +11,49 @@ import XCTest
 
 class CapsuleTests: XCTestCase {
 
+    private var viewModel: ListsViewModel!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        viewModel = ListsViewModel()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        viewModel = nil
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testMainListNetworkCall(){
+        //Set expectation
+        let expectation = XCTestExpectation(description: "load lists")
+        //Make a network call
+        viewModel.apiClient.getLists(completion: { (result) in
+            switch result{
+            case .failure(_):
+                XCTAssert(false, "Error while loading lists")
+            case .success(let lists):
+                XCTAssert(!lists.isEmpty, "Lists array is empty")
+            }
+            expectation.fulfill()
+        })
+        //Wait for 10 seconds
+        wait(for: [expectation], timeout: 10.0)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testListDetailsNetworkCall(){
+        //Set expectation
+        let expectation = XCTestExpectation(description: "load list's details")
+        //Make a network call using mock data
+        viewModel.apiClient.getListsDetails(date: "2011-02-13", list: "combined-print-and-e-book-fiction", completion: { (result) in
+            switch result{
+            case .failure(_):
+                XCTAssert(false, "Error while loading list's details")
+            case .success(let _):
+                break
+            }
+            expectation.fulfill()
+        })
+        //Wait for 10 seconds
+        wait(for: [expectation], timeout: 10.0)
     }
 
 }
