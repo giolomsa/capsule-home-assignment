@@ -17,7 +17,7 @@ extension UIViewController{
         if #available(iOS 13.0, *) {
             activityIndicator = UIActivityIndicatorView(style: .medium)
         } else {
-            activityIndicator = UIActivityIndicatorView(style: .white)
+            activityIndicator = UIActivityIndicatorView(style: .gray)
         }
         
         overlayView.translatesAutoresizingMaskIntoConstraints = false

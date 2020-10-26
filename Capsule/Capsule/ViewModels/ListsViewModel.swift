@@ -36,7 +36,7 @@ class ListsViewModel: NetworkViewModel{
             case .failure(let error):
                 print(error.localizedDescription)
             case .success(let lists):
-                self?.lists = lists
+                self?.lists = lists.sorted(by: {$0.name < $1.name})
             }
         }
     }
