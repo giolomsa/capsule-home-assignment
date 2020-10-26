@@ -6,7 +6,7 @@
 //  Copyright © 2020 Giorgi Lomsadze. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class APIClient{
     
@@ -22,10 +22,10 @@ class APIClient{
         self.httpLayer = httpLayer
     }
     
-    //load list
-    func getBooksObjects(completion: @escaping (Result<[String]>)-> Void){
+    // MARK: Load list
+    func getLists(completion: @escaping (Result<[List]>)-> Void){
         
-        self.httpLayer.request(at: .books) { (data, response, error) in
+        self.httpLayer.request(endpoint: .lists) { (data, response, error) in
             guard let httpResponse = response as? HTTPURLResponse,
                 httpResponse.statusCode.isSuccessHTTPCode,
                 let data = data
@@ -34,14 +34,55 @@ class APIClient{
                         completion(.failure(error as NSError))
                     }
                     return
-                }
+            }
             do{
                 let decoder = JSONDecoder()
-                let rootItems = try decoder.decode([String].self, from: data)
-                completion(.success(rootItems))
+                let listResponse = try decoder.decode(ListResponse.self, from: data)
+                completion(.success(listResponse.results))
+                //                completion(.success([List]()))
             }catch let error{
                 print(error.localizedDescription)
             }
+        }
+    }
+    
+    // MARK: Load list
+    func getListsDetails(date: String, list: String, completion: @escaping (Result<List>)-> Void){
+        
+        self.httpLayer.request(endpoint: .listDetails(date, list)) { (data, response, error) in
+            guard let httpResponse = response as? HTTPURLResponse,
+                httpResponse.statusCode.isSuccessHTTPCode,
+                let data = data
+                else {
+                    if let error = error{
+                        completion(.failure(error as NSError))
+                    }
+                    return
+            }
+            do{
+                let decoder = JSONDecoder()
+                let listResponse = try decoder.decode(ListDetailsResponse.self, from: data)
+                completion(.success(listResponse.results))
+            }catch let error{
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    // MARK:- Download image from url
+    func downloadImage(urlString: String, completion: @escaping (Result<Data>) -> Void){
+        
+        self.httpLayer.request(endpoint: .fromUrl(urlString)) { (data, response, error) in
+            guard let httpResponse = response as? HTTPURLResponse,
+                httpResponse.statusCode.isSuccessHTTPCode,
+                let data = data
+                else {
+                    if let error = error{
+                        completion(.failure(error as NSError))
+                    }
+                    return
+            }
+            completion(.success(data))
         }
     }
     

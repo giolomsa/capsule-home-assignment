@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0D371C77-95B7-462D-B103-003D0714BB48"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C82C7770-0A84-4A47-9A70-FDC1DA7706F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/Views/ListDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "ListDetailsViewController"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E02A8704-9608-4ACA-AE26-CE5FD4B54AAA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/Views/ListDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B41BB00A-8FEE-4FCC-82B7-B0CFB84918E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/ViewModels/ListsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadImageFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3FCF31A3-F5B7-4C60-A0EC-2F501C286AE2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/ViewModels/ListsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "loadImageFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1383E96-31C1-43EB-85E2-A6613A7356CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/ViewModels/ListsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "loadImageFromUrl(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6639B5BF-3054-4099-9878-DD8FC3B4D0A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/ViewModels/ListsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "loadImageFromUrl(urlString:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6639B5BF-3054-4099-9878-DD8FC3B4D0A0 - f18aa4cf37d2628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Capsule.APIClient.Result&lt;Foundation.Data&gt;) -&gt; () in Capsule.ListsViewModel.loadImageFromUrl(urlString: Swift.String, completion: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "Capsule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/george/Documents/XcodeProjects/Tests/Capsule/capsule-home-assignment/Capsule/Capsule/ViewModels/ListsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "437">
+               </Location>
+               <Location
+                  uuid = "6639B5BF-3054-4099-9878-DD8FC3B4D0A0 - f18aa4cf37d2628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Capsule.APIClient.Result&lt;Foundation.Data&gt;) -&gt; () in Capsule.ListsViewModel.loadImageFromUrl(urlString: Swift.String, completion: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "Capsule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/george/Documents/XcodeProjects/Tests/Capsule/capsule-home-assignment/Capsule/Capsule/ViewModels/ListsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "207FF848-2D1F-4078-A239-81EFD1414CE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/ViewModels/ListsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "loadImageFromUrl(urlString:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "207FF848-2D1F-4078-A239-81EFD1414CE8 - f18aa4cf37d2628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Capsule.APIClient.Result&lt;Foundation.Data&gt;) -&gt; () in Capsule.ListsViewModel.loadImageFromUrl(urlString: Swift.String, completion: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "Capsule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/george/Documents/XcodeProjects/Tests/Capsule/capsule-home-assignment/Capsule/Capsule/ViewModels/ListsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "437">
+               </Location>
+               <Location
+                  uuid = "207FF848-2D1F-4078-A239-81EFD1414CE8 - f18aa4cf37d2628"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Capsule.APIClient.Result&lt;Foundation.Data&gt;) -&gt; () in Capsule.ListsViewModel.loadImageFromUrl(urlString: Swift.String, completion: (__C.UIImage) -&gt; ()) -&gt; ()"
+                  moduleName = "Capsule"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/george/Documents/XcodeProjects/Tests/Capsule/capsule-home-assignment/Capsule/Capsule/ViewModels/ListsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C486B647-79CB-4E1C-8BF7-950E5A3D31FF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Capsule/Networking/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "downloadImage(urlString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

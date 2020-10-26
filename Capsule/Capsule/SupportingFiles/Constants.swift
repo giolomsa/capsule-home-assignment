@@ -9,7 +9,9 @@
 import Foundation
 
 class Constants{
-    static var baseUrl = "https://api.nytimes.com/svc/books/v3"
-    static var listsUrl = "/lists.json"
     
+    static var apiKey = "CKOLE9pSS0w3BqlipruHsaEfYn5HGnEn"
+    static var baseUrl = "https://api.nytimes.com/svc/books/v3"
+    static var listsUrl = "/lists/names.json"
+    static var listDetails = "/lists/"
 }
